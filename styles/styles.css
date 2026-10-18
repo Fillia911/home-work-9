@@ -334,10 +334,12 @@ th {
   top: 50px;
   left: 50px;
 }
+
 .absolute__item:nth-child(2) {
   top: calc(50% - 75px);
   left: calc(50% - 75px);
 }
+
 .absolute__item:nth-child(3) {
   bottom: 50px;
   right: 50px;
@@ -345,7 +347,7 @@ th {
 
 /* position sticky */
 .sticky {
-  padding: 30px;
+  padding: 50px;
 }
 
 .sticky__item {
