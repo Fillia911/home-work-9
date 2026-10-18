@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <ul class="menu-list">
+            <li><a href="../index.html">Homepage</a></li>
+            <li><a href="./tables.html">Tables</a></li>
+            <li><a href="#form">Contact me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="form">
+        <div class="container">
+          <form>
+            <!-- Text -->
+            <label for="fullname">Full name</label>
+            <input
+              id="fullname"
+              type="text"
+              name="fullname"
+              placeholder="Enter your full name"
+            />
+            <!-- Email -->
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+            <!-- Tel -->
+            <label>
+              Phone Number
+              <input type="tel" name="phone" />
+            </label>
+            <!-- URL -->
+            <label>
+              Your Website
+              <input type="url" name="website" />
+            </label>
+            <!-- Number -->
+            <label>
+              Estimated Budget ($)
+              <input type="number" name="budget" min="0" max="1000" step="7" />
+            </label>
+            <!-- Date -->
+            <label>
+              Project Deadline
+              <input
+                type="date"
+                name="deadline"
+                min="2026-09-07"
+                max="2026-09-27"
+              />
+            </label>
+            <!-- Range -->
+            <label>
+              Priority Level
+              <input
+                type="range"
+                name="priority"
+                min="0"
+                max="100"
+                value="77"
+              />
+            </label>
+            <!-- Select -->
+            <label>
+              Service Needed
+              <select name="service">
+                <option value="" disabled selected>
+                  -- Choose an option --
+                </option>
+                <option value="web-dev">Web Development</option>
+                <option value="email-dev">HTML Email Development</option>
+                <option value="consulting">Technical Consulting</option>
+              </select>
+            </label>
+            <!-- Checkbox -->
+            <fieldset>
+              <legend>Which platforms are you using?</legend>
+              <label>
+                WordPress
+                <input type="checkbox" name="platforms" value="wordpress" />
+              </label>
+              <label>
+                HubSpot
+                <input type="checkbox" name="platforms" value="hubspot" />
+              </label>
+              <label>
+                Other
+                <input type="checkbox" name="platforms" value="other" />
+              </label>
+            </fieldset>
+            <!-- Radio -->
+            <fieldset>
+              <legend>Preferred Contact Method</legend>
+              <label>
+                Email
+                <input type="radio" name="contact-method" value="email" />
+              </label>
+              <label>
+                Phone
+                <input type="radio" name="contact-method" value="phone" />
+              </label>
+            </fieldset>
+            <!-- Textarea -->
+            <label>
+              Project Details
+              <textarea name="message" rows="7" cols="27"></textarea>
+            </label>
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <h2>Contacts</h2>
+        <address>
+          <ul class="contacts-list">
+            <li>
+              <a target="_blank" href="https://fillia911.github.io/portfolio/"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/Fillia911">GitHub</a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/illia-bocharov-9318011b3/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/by_Fillia">Telegram</a>
+            </li>
+            <li>
+              <a href="tel:+380954092920">+38 (095) 409-29-20</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
