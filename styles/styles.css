@@ -47,8 +47,8 @@ ol {
   border-radius: calc(var(--border-radius) / 2);
 }
 
-:where(ul, ol) li + li {
-  margin-top: 5px;
+:where(ul, ol) li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 a {
@@ -188,8 +188,8 @@ form input:checked {
   border: none;
 }
 
-.showcase-list li + li {
-  margin-top: 10px;
+.showcase-list li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .showcase-list > li:nth-child(even) {
@@ -273,17 +273,17 @@ th {
 }
 
 /* positioning */
-.positioning-section :where(ul) {
+.positioning-section ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.positioning-section :where(li) {
+.positioning-section li {
   margin: 0;
 }
 
-.card {
+.positioning-section .card {
   background: #1f1e38;
   border: 1px solid var(--accent-color);
   border-radius: calc(var(--border-radius) / 2);
@@ -291,72 +291,69 @@ th {
 }
 
 /* position relative */
-.reative {
+.positioning-section .reative {
   height: 450px;
 }
 
-.reative__item {
+.positioning-section .reative__item {
   width: 150px;
   height: 150px;
-}
-
-.reative__item {
   position: relative;
 }
 
-.reative__item:first-child {
+.positioning-section .reative__item:first-child {
   top: 50px;
   left: 50px;
 }
 
-.reative__item:nth-child(2) {
+.positioning-section .reative__item:nth-child(2) {
   left: 10%;
 }
 
-.reative__item:nth-child(3) {
+.positioning-section .reative__item:nth-child(3) {
   bottom: 50px;
   left: 15%;
 }
 
 /* position absolute */
-.absolute {
+.positioning-section .absolute {
   height: 450px;
   position: relative;
 }
 
-.absolute__item {
+.positioning-section .absolute__item {
   width: 150px;
   height: 150px;
   position: absolute;
 }
 
-.absolute__item:first-child {
+.positioning-section .absolute__item:first-child {
   top: 50px;
   left: 50px;
 }
 
-.absolute__item:nth-child(2) {
+.positioning-section .absolute__item:nth-child(2) {
   top: calc(50% - 75px);
   left: calc(50% - 75px);
 }
 
-.absolute__item:nth-child(3) {
+.positioning-section .absolute__item:nth-child(3) {
   bottom: 50px;
   right: 50px;
 }
 
 /* position sticky */
-.sticky {
+.positioning-section .sticky {
   padding: 50px;
 }
 
-.sticky__item {
+.positioning-section .sticky__item {
   position: sticky;
   top: 25vh;
 }
 
 /* position fixed */
-.fixed {
+.positioning-section .fixed {
   position: fixed;
   top: 50px;
   left: 50px;
